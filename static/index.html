@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to My Azure Static Site</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                background: linear-gradient(135deg, #0078d7, #00b4ff);
+                color: #fff;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 0.5em;
+                animation: fadeIn 2s ease-in-out;
+            }
+
+            p {
+                font-size: 1.25rem;
+                max-width: 600px;
+                margin-bottom: 2em;
+                opacity: 0.9;
+            }
+
+            a.button {
+                background-color: #fff;
+                color: #0078d7;
+                padding: 0.75em 1.5em;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+
+            a.button:hover {
+                background-color: #e6f7ff;
+                transform: translateY(-3px);
+            }
+
+            footer {
+                position: absolute;
+                bottom: 15px;
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🚀 Welcome to Azure Static Web Hosting</h1>
+        <p>
+            Your static website is successfully deployed on
+            <strong>Azure Storage Account</strong>.
+        </p>
+        <a href="error.html" class="button">View Error Page Example</a>
+        <footer>Hosted with ❤️ on Microsoft Azure</footer>
+    </body>
+</html>

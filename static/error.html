@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page Not Found</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                background: linear-gradient(135deg, #ff416c, #ff4b2b);
+                color: #fff;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 5rem;
+                margin-bottom: 0.2em;
+                animation: fadeIn 1.5s ease-in-out;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+                margin-bottom: 1em;
+            }
+
+            a.button {
+                background-color: #fff;
+                color: #ff416c;
+                padding: 0.75em 1.5em;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+
+            a.button:hover {
+                background-color: #ffe6ea;
+                transform: translateY(-3px);
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>The page you’re looking for doesn’t exist or has been moved.</p>
+        <a href="index.html" class="button">Go Back Home</a>
+    </body>
+</html>
